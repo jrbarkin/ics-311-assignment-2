@@ -1,13 +1,13 @@
 # sayings.py
 
-Author: Michaela Gillan
+# Author: Michaela Gillan
 
 import unicodedata
 from collections import defaultdict
 
 # Normalize word to help search operation. Deals with Olelo symbols for sorting/comparing.
 def normalize(s):
-  return.unicodedata.normalize('NFKD',s).lower()
+  return unicodedata.normalize('NFKD',s).lower()
 
 # Define class Saying
 class Saying:
